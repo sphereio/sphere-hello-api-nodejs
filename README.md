@@ -2,6 +2,8 @@
 
 # Node.js Hello API
 
+[![Build Status](https://travis-ci.org/sphereio/sphere-hello-api-nodejs.svg?branch=master)](https://travis-ci.org/sphereio/sphere-hello-api-nodejs)
+
 This repo contains some example to show how easy is to use the SPHERE.IO API.
 
 **Make sure to have some Products and Categories in your project if you want to see something**
