@@ -1,0 +1,30 @@
+{
+  "name": "sphere-hello-api-nodejs",
+  "description": "Get started using the SPHERE.IO API with Node.js",
+  "tags": [
+    "sphere",
+    "sphereio",
+    "oauth",
+    "api",
+    "node",
+    "sdk",
+    "hello"
+  ],
+  "version": "0.1.0",
+  "author": {
+    "name": "Nicola Molinari",
+    "email": "nicola.molinari@commercetools.de"
+  },
+  "private": false,
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "scripts": {
+    "start": "node hello.js",
+    "test": "$(node hello.js | jq --raw-output .count) | grep 5"
+  },
+  "dependencies": {
+    "minimist": "latest",
+    "sphere-node-sdk": "latest"
+  }
+}
