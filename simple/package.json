@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "node hello.js",
-    "test": "$(node hello.js | jq --raw-output .count) | grep 5"
+    "test": "node hello.js --expects 5"
   },
   "dependencies": {
     "minimist": "latest",
