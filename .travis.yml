@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - '0.11'
+  - '0.10'
+  - '0.8'
+  - '0.6'
+before_script:
+  - npm install -g grunt-cli
+  - ./create_config.sh
+  - PROJ_DIR=$(pwd)
+script:
+  - 'cd "${PROJ_DIR}"/simple && npm install && npm test'
+  - 'cd "${PROJ_DIR}"/express && npm install && grunt test'
+env:
+  global:
+    - secure: mylLLsXGpXOOIoqGChd7t0XPH7a3pUuN68/I/FB3+zWlvrNv6s6Scztpe6a2htxBaQDXSX//3+sDG4eblhWtMkSIyu4poPsOUXdf3m4iUhCbZa8ZsKAyk4V29uMpeB16GIeZNO+0z59X9uJBkZAAfH9UQHzTOQJhghHudeVWorI=
+    - secure: PHgx5zvPv7w2Ic0VuGhrFdW/ZXYZG1jyROdm9gewXCjr6ngY3yHZyuwO49Xn1fY8Jj9fjwLxpoJ//2Sr4RwMvM0BIK5JvCMiMXxZ/wNtgRJCicdOEAXXcnSLNWyXgODadyaI62GsDTyzObTyQ0ifsVJ9sOGgZuP6vgB2A36c6Es=
+    - secure: nrQZbiPhrRlPIFtgoTFb3D6sZeTjQLpoprW2egbHoQ6KnVWFyyxGHkRZ4d2pgPk+IwYzNgtJ1Iq0yCYR1WaN9Kp8mEhxQHj7eChfbW/TYZNv3XTaPK28jnvlwYO4+La67loxUMOaPFbo72J5mpjibJDAVwP8ZTRfNbCtZAp9Dls=

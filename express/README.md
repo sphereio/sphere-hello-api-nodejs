@@ -1,5 +1,7 @@
 Starts an express.js application
 
+> Make sure you created the `config.js` first
+
 ```bash
 $ npm install -g grunt-cli && npm install
 $ grunt serve
