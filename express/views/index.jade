@@ -20,7 +20,7 @@ block content
             div.col-xs-6.col-lg-4
               h2 #{product.name[lang]}
               img(src='#{img}', width='200')
-              div #{product.description[lang] ? product.description[lang] : 'n/a'}
+              div #{product.description ? (product.description[lang] ? product.description[lang] : 'n/a') : 'n/a'}
               p
                 a.btn.btn-default(href='/product/#{product.id}', role='button') More details »
         else
