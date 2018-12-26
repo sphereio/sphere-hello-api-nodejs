@@ -48,7 +48,7 @@
     "grunt-shell": "1.1.2",
     "jasmine-node": "1.14.5",
     "load-grunt-tasks": "3.2.x",
-    "request": "2.55.x",
+    "request": "2.68.0",
     "sphere-coffeelint": "git://github.com/sphereio/sphere-coffeelint.git#master"
   }
 }
